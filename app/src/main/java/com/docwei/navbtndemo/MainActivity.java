@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements NavigtionButtonBa
     }
 
     private void initData() {
+        //setTab值为-1表示默认不选中任何一个,为0选中第一个
         mNav_onlytext = (NavigtionButtonBar) findViewById(R.id.nav_onlytext);
         mNav_onlytext.addItem(new NavigtionButtonItem(0,"100元").setActiveColor(R.color.colorAccent))
                 .addItem(new NavigtionButtonItem(0,"200元").setActiveColor(R.color.colorAccent))
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements NavigtionButtonBa
                 .addItem(new NavigtionButtonItem(R.mipmap.ic_book_white_24dp, "Android").setActiveColor(R.color.teal))
                 .addItem(new NavigtionButtonItem(R.mipmap.ic_music_note_white_24dp, " 前端").setActiveColor(R.color.grey))
                 .addItem(new NavigtionButtonItem(R.mipmap.ic_tv_white_24dp, "瞎推荐").setActiveColor(R.color.brown))
-                .setTab(-1);
+                .setTab(2);
         mNavBtn.setTabSelectLinster(this);
     }
 
