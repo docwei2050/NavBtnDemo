@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+     <ImageView android:layout_width="wrap_content"
+                android:id="@+id/child_navi_iv"
+                android:src="@mipmap/ic_book_white_24dp"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"/>
+    <TextView android:layout_width="wrap_content"
+              android:text="书本"
+              android:id="@+id/child_navi_tv"
+              android:layout_height="wrap_content"
+              android:duplicateParentState="true"/>
+</merge>
